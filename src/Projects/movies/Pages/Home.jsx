@@ -27,15 +27,16 @@ export const Home = () => {
 
   return (
       <>
-           <Carrousel movies={movies} />
-
-            <div className= 'container ms-4 row'>
+           <div>
+           <Carrousel />
+           </div>
+            <div className= 'container mt-2 ms-3  row justify-content-center'>
                   {          
 
                     movies.map(movie => (
-                      <div className='container col' >
-                            <Movie key={movie._id} {...movie} />
-                      </div>
+                        <div className=' col ms-1 ' >
+                              <Movie key={movie._id} {...movie} />
+                        </div>
               
                     ))
                   }

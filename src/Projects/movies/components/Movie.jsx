@@ -18,13 +18,12 @@ export const Movie = (props) => {
 
 
   return ( 
-    <div className='border' onClick={ () => selectMovie(props._id) }  onMouseOver={() =>  setShowToolTip(true)} onMouseOut={() => setShowToolTip(false)} style={{width:"200px", height:"200px", cursor:"pointer", position:"absolute" }} >
-      <img style={{width:"100%", height:"170px"}} src={props.imgUrl} />
+    <div className='border rounded bg-primary' onClick={ () => selectMovie(props._id) }  onMouseOver={() =>  setShowToolTip(true)} onMouseOut={() => setShowToolTip(false)} style={{width:"180px", height:"180px", cursor:"pointer", position:"relative" , zIndex:"4" }} >
+      <img style={{width:"100%", height:"150px"}} src={props.imgUrl} />
       {
         showToolTip && <ToolTip {...props} />
       } 
-      <p className='h3' >{props.name}</p>
-       
+      <p className='h3' >{props.name}</p>       
     </div>
   )
 }

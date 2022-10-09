@@ -1,0 +1,26 @@
+
+
+
+[
+    {
+        "id": 1,
+        "name":"Carlos Garrido",
+        "describtion": "Hi, my name is Carlos i am a teacher at the university ",
+        "job":"Teacher",
+        "img":"https://res.cloudinary.com/dlsc2062n/image/upload/v1662076797/heroes/xicfblsaeqo0vqs2xrzy.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Susana luis",
+        "describtion": "Hi, my name is Susana i am a Journalist at the university",
+        "job":"Journalist",
+        "img":"https://res.cloudinary.com/dlsc2062n/image/upload/v1662076739/heroes/nwoi46jflw8lsgu2wpwp.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Juan west",
+        "describtion": "Hi, my name is Juan i am a web developer at the university",
+        "job":"Developer",
+        "img":"https://res.cloudinary.com/dlsc2062n/image/upload/v1662076683/heroes/ulg7zk2cgsg4khygsi4i.jpg"
+    }  
+]

@@ -1,0 +1,70 @@
+
+
+
+.main { 
+
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #b3e5fc;
+}
+
+
+.images{
+
+    width: 120px;
+    height: 120px;
+    margin-top: 0px;
+    border-radius: 50%;
+    border-color: whitesmoke;
+    border-style: solid; 
+    margin-left: 34%;
+
+}
+
+
+.img-move{
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.cart{
+
+    /* width: 500px; */
+    width: 50vw;
+    display: flex;
+    /* flex-direction: column;*/
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center;    
+    height:  400px !important;
+    border-radius: 10px;
+    background-color: #fafafa;
+    gap: 6px;
+}
+
+
+.cart-info{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;    
+
+}
+
+
+
+.img-carrusel{
+
+    background-image: url('https://res.cloudinary.com/dlsc2062n/image/upload/v1662080525/heroes/c2fwjpecncmyztqjpyja.png');
+ 
+}

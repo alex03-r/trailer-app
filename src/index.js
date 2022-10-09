@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import { Login } from './Projects/Login/Login';
+//  import { ReviewsApp } from './Projects/reviews/ReviewsApp'
+// import { LoginRouter } from './Projects/Login/LoginRouter'
+import { NavBar} from "./Projects/movies/components/NavBar"
+import { MovieApp } from './Projects/movies/MovieApp';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <ReviewsApp /> */}
+     {/* <Login /> */}
+     {/* <LoginRouter /> */}
+     <MovieApp />
+  
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

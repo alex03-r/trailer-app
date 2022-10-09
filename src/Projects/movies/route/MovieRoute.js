@@ -24,7 +24,7 @@ export const MovieRoute = () => {
          
                 <Routes>
                     <Route path='/' element={ <Home />} ></Route>
-                    <Route path='/movie' element={ <MovieSelected />} ></Route>
+                    <Route path='/movie/:id' element={ <MovieSelected />} ></Route>
                 </Routes>
         
         </div>

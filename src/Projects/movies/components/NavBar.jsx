@@ -2,15 +2,15 @@ import React from 'react'
 import { ToolTip } from './ToolTip';
 import logoPeli from '../assets/logoPeli.jpg'
 import { Link }   from "react-router-dom";
+import { SearchMovieList } from "../components/SearchMovieList"
+import { useState } from 'react';
 
 
 export const NavBar = () => {
 
+    const [searchText, setSearchText] = useState("")  ;
 
-
-
-  return (
-     
+  return (    
  
             <nav className="navbar fixed-top navbar-expand-lg ps-5 navbar-light bg-light mb-0 pb-0" style={{ height:"60px" }}>
            
@@ -22,12 +22,15 @@ export const NavBar = () => {
                                 <p>Home</p>
                             </Link>
               
-                            <Link to='/movie' style={{color:"black", textDecoration:"none"}}>
+                            <Link to='/' style={{color:"black", textDecoration:"none"}}>
                                 Genero
-                            </Link>   
-                            {/* <ToolTip /> */}
+                            </Link>                          
                      </ul>
-                            <input class="form-control h-25 mt-1 me-2" type="search" placeholder="Search" aria-label="Search" />
+                      <input class="form-control h-25 mt-1 me-2" style={{position:"relative"}} value={searchText} type="search" onChange={(e) => setSearchText(e.target.value) } placeholder="Search" aria-label="Search" />
+                      {
+                        searchText.length > 0 &&   <SearchMovieList searchText={searchText}  setSearchText={setSearchText} />
+                      }
+                   
                     </div>
                     
                 </div>

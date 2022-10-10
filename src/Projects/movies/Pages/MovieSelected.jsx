@@ -2,21 +2,19 @@
 
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { getMovies } from '../helpers/getMovies';
 
 export const MovieSelected = () => {
 
   const { id } = useParams();
   const [movies, setMovies] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
   let index = movies.findIndex(movie => movie._id === id);
 
   useEffect(() => {
-
-    fetch("http://localhost:4000/api/movies")
-      .then(res => res.json())
-      .then(data => setMovies(data.movies))
-      .catch(error => console.log(error))
-
-  }, [id])
+    getMovies().then(data => setMovies(data.movies) )
+  
+  }, [])
 
   return (
     <div className=' mt-4' style={{ backgroundColor: "#bbdefb", heigth: "100vh" }} >
@@ -35,9 +33,13 @@ export const MovieSelected = () => {
         </div>
 
       </div>
-      <div className="container ms-5 mt-5 ps-5 pb-3">
-        <iframe width="1100"  height="615" src="https://www.youtube.com/embed/2kzxPG4cz2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+    
+         <div className="container  ms-5 mt-5 ps-5 pb-3" >
+            <iframe width="1100"   height="615" src={movies[index]?.movieSrcUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+         </div>
+      
+  
 
     </div>
   )

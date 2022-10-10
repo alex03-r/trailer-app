@@ -16,27 +16,27 @@ useEffect(() => {
 
 }, [])
 
+// setInterval(() => {
+  
+//   if(index >= movies.length ){
+
+//     setIndex(0)
+//   }
+
+//   setIndex(index  => index + 1)
+
+// }, 6000)
 
 useEffect(() => {
   
-  setInterval(() => {
-  
-    if(index >= movies.length ){
- 
-      setIndex(0)
-    }
 
-    setIndex(index  => index + 1)
-
-  }, 2000)
 
   console.log("hello")
 
 },[])
 
   return (
-
-    <div className='img-carrusel animate animate__backInRight mt-5 pt-5' style={{ marginTop:"10px" , backgroundImage: `url(${movies[index]?.imgUrl})` }}  >
+    <div className='img-carrusel animate animate__backInRight mt-5 pt-5' style={{ marginTop:"10px" , backgroundImage: `url(${movies[index]?.imgUrl})`, height:"200x" }}  >
         <p className='ms-5 h3  fw-bold'>{ movies[index]?.name } </p>
         <p className='ms-5 h5 fw-light'>/2022</p>
         <p className='ms-5 '> {movies[index]?.describtion.slice(0, 50) + "..."  } </p>        

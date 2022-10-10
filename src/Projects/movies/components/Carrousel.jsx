@@ -8,11 +8,14 @@ import "../../reviews/style.css"
 export const Carrousel = () => {
 
   const[movies, setMovies] = useState([]);
-  const [index , setIndex] = useState(0);
+  const [index , setIndex] = useState(2);
 //  const  { name,  describtion, imgUrl } = movies[index];
+
+
 
 useEffect(() => {
 
+  setIndex(0)
   fetch("http://localhost:4000/api/movies")
   .then(res => res.json())
   .then(data => setMovies(data.movies) )
@@ -20,14 +23,26 @@ useEffect(() => {
 
 }, [])
 
-//"http://res.cloudinary.com/dlsc2062n/image/upload/v1665279039/heroes/mpkldc1q7edhf0rb8snw.jpg"
+
+useEffect(() => {
+  
+  setTimeout(() => {
+  
+    setIndex(index  => index + 1)
+
+  }, 6000)
+
+  console.log("hello")
+
+},[])
+
   return (
 
-    <div className='img-carrusel border ' style={{ marginTop:"10px" , backgroundImage: `url(${movies[0]?.imgUrl})` }}  >
+    <div className='img-carrusel' style={{ marginTop:"10px" , backgroundImage: `url(${movies[index]?.imgUrl})` }}  >
     {/* { describtion }  {name} */}
-        <p className='ms-5 h3 fw-bold'>{ movies[0]?.name } </p>
+        <p className='ms-5 h3 fw-bold'>{ movies[index]?.name } </p>
         <p className='ms-5 h5 fw-light'>/2022</p>
-        <p className='ms-5 '> {movies[0]?.describtion.slice(0, 50) + "..."  } </p>        
+        <p className='ms-5 '> {movies[index]?.describtion.slice(0, 50) + "..."  } </p>        
     </div>
   )
 }

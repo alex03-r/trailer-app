@@ -8,11 +8,6 @@ export const Home = () => {
 
 
   const[movies, setMovies] = useState([]);
-
-  // const obtainMovies =  async () => {
-  //   getMovies().then(data => console.log(data))
-  //   // console.log(movies)
-  // }
   
   useEffect(() => {
 
@@ -30,15 +25,17 @@ export const Home = () => {
            <div>
            <Carrousel />
            </div>
-            <div className= 'container mt-2 ms-3  row justify-content-center'>
+            <div className= 'row justify-content-center' style={{backgroundColor:"#001970" , width:"100vw" , marginRight:"0px" , height:"70vh"}}>
                   {          
-
+                
                     movies.map(movie => (
-                        <div className=' col ms-1 ' >
+                     
                               <Movie key={movie._id} {...movie} />
-                        </div>
+                    
               
                     ))
+
+                    // </div>
                   }
             </div>
       </>

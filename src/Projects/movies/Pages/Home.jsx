@@ -23,21 +23,18 @@ export const Home = () => {
 
 
   return (
-    <div>
-      <div style={{height:"200px"}} >
-        <Carrousel />
-      </div>
-      <div className='row justify-content-center ' style={{ backgroundColor: "#002984", width: "100vw", marginRight: "0px", height: "100vh" }}>
-        {
+    <div style={{width:"100vw" }}   >
+        <div style={{height:"200px"}} >
+          <Carrousel />
+        </div>
+        <div className='row justify-content-center' style={{ backgroundColor: "#eeeeee", width:"100vw" }}>
+          {
+            movies.map(movie => (
+              <Movie key={movie._id} {...movie} />
+            ))
 
-          movies.map(movie => (
-
-            <Movie key={movie._id} {...movie} />
-
-          ))
-
-        }
-      </div>
+          }
+        </div>
     </div>
   )
 }

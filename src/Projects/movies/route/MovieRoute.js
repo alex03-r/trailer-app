@@ -15,18 +15,16 @@ import { MovieSelected } from '../Pages/MovieSelected';
 export const MovieRoute = () => {
 
   return (
-    <div>
+    <div style={{ height:"100vh" }} >
      <Router>
         <div>
           <NavBar />
         </div>
-        <div>
-         
+        <div style={{backgroundColor:"#eeeeee"}} >         
                 <Routes>
                     <Route path='/' element={ <Home />} ></Route>
                     <Route path='/movie/:id' element={ <MovieSelected />} ></Route>
-                </Routes>
-        
+                </Routes>        
         </div>
         </Router>
     </div>

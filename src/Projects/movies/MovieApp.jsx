@@ -7,9 +7,9 @@ export const MovieApp = () => {
 
 
   return (
-    <div>
+   
         <MovieRoute />
-    </div>
+  
   )
 
 

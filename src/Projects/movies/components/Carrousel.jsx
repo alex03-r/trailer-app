@@ -5,7 +5,7 @@ import "../../reviews/style.css"
 export const Carrousel = () => {
 
   const[movies, setMovies] = useState([]);
-  const [index , setIndex] = useState(0);
+  const [index , setIndex] = useState(2);
 
 useEffect(() => {
 
@@ -16,24 +16,6 @@ useEffect(() => {
 
 }, [])
 
-// setInterval(() => {
-  
-//   if(index >= movies.length ){
-
-//     setIndex(0)
-//   }
-
-//   setIndex(index  => index + 1)
-
-// }, 6000)
-
-useEffect(() => {
-  
-
-
-  console.log("hello")
-
-},[])
 
   return (
     <div className='img-carrusel animate animate__backInRight mt-5 pt-5' style={{ marginTop:"10px" , backgroundImage: `url(${movies[index]?.imgUrl})`, height:"200x" }}  >

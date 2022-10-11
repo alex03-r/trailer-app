@@ -67,8 +67,8 @@
 
     /* background-image: url('https://res.cloudinary.com/dlsc2062n/image/upload/v1662080525/heroes/c2fwjpecncmyztqjpyja.png'); */
     color: white;
-    height: 160px;
-    width: 100vw;
+    height: 200px;
+    width: 99vw;
     background-repeat:no-repeat;
     background-size: 100%;
     object-fit: cover;

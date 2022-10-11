@@ -8,7 +8,6 @@ export const MovieSelected = () => {
 
   const { id } = useParams();
   const [movies, setMovies] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
   let index = movies.findIndex(movie => movie._id === id);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ export const MovieSelected = () => {
   }, [])
 
   return (
-    <div className=' mt-4' style={{ backgroundColor: "#bbdefb", heigth: "100vh" }} >
+    <div className=' mt-5' style={{ backgroundColor: "#eeeeee", heigth: "100vh" }} >
 
       <div className="container mt-4  d-flex">
 

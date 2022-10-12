@@ -11,8 +11,7 @@ export const Movie = (props) => {
     const[showToolTip, setShowToolTip] = useState(false);
     const navigate = useNavigate()
 
-    const selectMovie = (id) => {
-      
+    const selectMovie = (id) => {      
       navigate(`/movie/${id}`)
     }
 

@@ -34,7 +34,7 @@ const navigateTotMovie = (id) => {
 
 
   return (
-    <div  style={{position:"absolute" , top:"48px", width:"200px", right:"50px" , cursor:"pointer"  }} >           
+    // <div className=''  style={{position:"absolute" , top:"48px", width:"200px", right:"auto" , cursor:"pointer"  }} >           
                     
         <ul className='list-group text-center' >
             {
@@ -45,7 +45,7 @@ const navigateTotMovie = (id) => {
             }
         </ul>
             
-    </div>
+    // </div>
   )
 
 

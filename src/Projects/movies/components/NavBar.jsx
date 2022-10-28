@@ -8,8 +8,7 @@ export const NavBar = () => {
 
     const [searchText, setSearchText] = useState("") ;   
 
-  return (    
- 
+  return (     
             <nav className="navbar fixed-top navbar-expand-lg ps-sm-2 ps-lg-5 navbar-light bg-light mb-0 pb-0" style={{ height:"60px" }}>
            
                 <div className="container-lg   ms-xl-4 ps-xl-3 w-100 " style={{ marginTop:"0px", paddingTop:"0px" }} >
@@ -30,8 +29,7 @@ export const NavBar = () => {
                     </div>
                     
                 </div>
-            </nav>    
-        
+            </nav>           
  
   )
 }

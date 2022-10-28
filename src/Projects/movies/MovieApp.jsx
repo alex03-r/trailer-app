@@ -5,12 +5,8 @@ import { MovieRoute } from './route/MovieRoute'
 
 export const MovieApp = () => {
 
-
   return (
-   
-        <MovieRoute />
-  
+    <MovieRoute />
   )
-
 
 }

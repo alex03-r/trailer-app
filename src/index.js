@@ -16,6 +16,7 @@ root.render(
      {/* <Login /> */}
      {/* <LoginRouter /> */}
      <MovieApp />
+ 
   
   </React.StrictMode>
 );

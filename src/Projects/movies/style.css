@@ -70,8 +70,19 @@
     height: 200px;
     width: 99vw;
     background-repeat:no-repeat;
-    background-size: 100%;
+    background-size: 100%;  
+    background-clip: content-box;
+    background-position: left center;
+
     object-fit: cover;
-   
  
+}
+
+
+
+
+.heightDiv{
+
+    -webkit-transform: rotate3d(0, 1, 0, 100deg); /* Chrome, Safari, Opera */
+    transform: rotate3d(0, 1, 0, 60deg);
 }

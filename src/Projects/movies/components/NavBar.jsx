@@ -1,24 +1,19 @@
 import React from 'react'
-import { ToolTip } from './ToolTip';
 import logoPeli from '../assets/logoPeli.jpg'
 import { Link }   from "react-router-dom";
 import { SearchMovieList } from "../components/SearchMovieList"
-import {CategoryToolTip } from "../components/CategoryToolTip"
 import { useState } from 'react';
-
-
 
 export const NavBar = () => {
 
-    const [searchText, setSearchText] = useState("") ;
-    const [showCategory, setShowCategory] = useState(false) ;
+    const [searchText, setSearchText] = useState("") ;   
 
   return (    
  
             <nav className="navbar fixed-top navbar-expand-lg ps-sm-2 ps-lg-5 navbar-light bg-light mb-0 pb-0" style={{ height:"60px" }}>
            
-                <div className="container-lg  ms-xl-4 ps-xl-3 w-100 " style={{ marginTop:"0px", paddingTop:"0px" }} >
-                   <Link className=''  to="/" > <img  style={{width:"50px"}} src={logoPeli} /> </Link>
+                <div className="container-lg   ms-xl-4 ps-xl-3 w-100 " style={{ marginTop:"0px", paddingTop:"0px" }} >
+                   <Link className=' bg-light'  to="/" > <img  style={{width:"50px",marginTop:"-14px"  }} src={logoPeli} /> </Link>
                     <div className='d-flex me-sm-5 me-lg-4 mt-xl-1  ' >
                      <ul className='d-flex me-4 mt-2' >
                             <Link to='/' className='me-2 mt-lg-1' style={{color:"black", textDecoration:"none"}} >
@@ -29,7 +24,7 @@ export const NavBar = () => {
 
                       <div className=''  style={{position:"absolute" , top:"48px", width:"200px", right:"auto", cursor:"pointer"  }} >  
                       {
-                        searchText.length > 0 &&   <SearchMovieList searchText={searchText}  setSearchText={setSearchText} />
+                        searchText.length > 0 &&   <SearchMovieList searchText={searchText} setSearchText={setSearchText} />
                       }
                       </div> 
                     </div>

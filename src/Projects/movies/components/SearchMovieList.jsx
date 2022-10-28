@@ -1,52 +1,45 @@
 
 import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getMovies } from '../helpers/getMovies'
 import { useNavigate } from "react-router-dom"
 
-export const SearchMovieList = ({searchText , setSearchText }) => {
+export const SearchMovieList = ({ searchText, setSearchText }) => {
 
-const navigate = useNavigate();
-const [moviesList , setMoviesList] = useState([]);
-const [filterMovies, setFilterMovies] = useState([]);
+    const navigate = useNavigate();
+    const [moviesList, setMoviesList] = useState([]);
+    const [filterMovies, setFilterMovies] = useState([]);
 
-useEffect(()=>{
+    useEffect(() => {
 
-    getMovies().then(data => setMoviesList(data.movies))
+        getMovies()
+            .then(data => setMoviesList(data.movies))
+    }, [])
 
-}, [])
+    useEffect(() => {
+        const filteredMoviesResult = moviesList.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase()))
+        setFilterMovies(filteredMoviesResult);
+    }, [searchText])
 
-useEffect(() => {
+    const navigateTotMovie = (id) => {
 
-    const filteredMoviesResult = moviesList.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase() ) )
-    setFilterMovies(filteredMoviesResult);
-
-    console.log("filtro")
-}, [searchText])
-
-const navigateTotMovie = (id) => {
-
-    navigate(`/movie/${id}`)
-    setSearchText("")
-
-}
+        navigate(`/movie/${id}`)
+        setSearchText("")
+    }
 
 
-  return (
-    // <div className=''  style={{position:"absolute" , top:"48px", width:"200px", right:"auto" , cursor:"pointer"  }} >           
-                    
+    return (
+
         <ul className='list-group text-center' >
             {
-                filterMovies.map( movie => (
+                filterMovies.map(movie => (
 
-                            <li key={movie._id}  onClick={ () => navigateTotMovie(movie._id) } className='list-group-item' style={{cursor:"pointer"}} > { movie.name } </li>
-                             ))
+                    <li key={movie._id} onClick={() => navigateTotMovie(movie._id)} className='list-group-item' style={{ cursor: "pointer" }} >
+                        {movie.name}
+                    </li>
+                ))
             }
         </ul>
-            
-    // </div>
-  )
-
+    )
 
 }

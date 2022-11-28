@@ -1,15 +1,16 @@
 
 
 import React, { useState, useEffect } from 'react'
-import { useRef } from 'react';
-import { useParams , useLocation } from 'react-router-dom'
-import { getMovies } from '../helpers/getMovies';
+import { useParams  } from 'react-router-dom'
+import { useMovies } from '../useMovies';
+  
 
 export const MovieSelected = () => {
 
-  const { id } = useParams();
-  const [movies, setMovies] = useState([]);
-  let index = movies.findIndex(movie => movie._id === id);
+    const { id } = useParams();
+    const {movies} = useMovies();
+
+    let index = movies.findIndex(movie => movie._id === id);
 
   function getCurrentWidth() {
 
@@ -23,11 +24,6 @@ export const MovieSelected = () => {
         return 600;
       }
   }
-
-  useEffect(() => {
-    getMovies().then(data => setMovies(data.movies));
-
-  }, [])
 
   return (
     <div className=' mt-5' style={{ backgroundColor: "#eeeeee", heigth: "100vh" , width:"98vw"}} >

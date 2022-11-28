@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Carrousel } from '../components/Carrousel'
 import { Movie } from '../components/Movie';
-import { getMovies } from "../helpers/getMovies"
+import { useMovies } from '../useMovies';
 
 export const Home = () => {
 
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-
-    getMovies()
-      .then(data => setMovies(data.movies))
-
-  }, [])
-
+  const { movies } = useMovies()
 
   return (
     <div style={{ marginRight: "0px" }} >

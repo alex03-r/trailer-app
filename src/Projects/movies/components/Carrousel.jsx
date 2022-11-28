@@ -1,19 +1,14 @@
-import React from 'react'
-import { useState, useEffect  } from 'react'
-import { getMovies } from '../helpers/getMovies'
-import "../style.css"
+
+import { useState } from 'react'
+import { useMovies } from '../useMovies'
+
+import "../style.css" 
 
 export const Carrousel = () => {
 
-  const[movies, setMovies] = useState([]);
+
+  const { movies } = useMovies();
   let index = 0;
-
-  useEffect(() => {
-
-    getMovies()
-        .then(data => setMovies(data.movies) )
-
-  }, [])
 
     return (
       <div className='img-carrusel animate animate__backInRight mt-4 pt-5' style={{ marginTop:"10px" , backgroundImage: `url(${movies[index]?.imgUrl})`, height:"100%" }}  >

@@ -1,23 +1,17 @@
-
-import React from 'react'
 import { useEffect, useState } from 'react'
-import { getMovies } from '../helpers/getMovies'
 import { useNavigate } from "react-router-dom"
+import { useMovies } from '../useMovies'
 
 export const SearchMovieList = ({ searchText, setSearchText }) => {
 
     const navigate = useNavigate();
-    const [moviesList, setMoviesList] = useState([]);
-    const [filterMovies, setFilterMovies] = useState([]);
+
+    const { movies } = useMovies()
+  
+    const [filterMovies, setFilterMovies] = useState([]); 
 
     useEffect(() => {
-
-        getMovies()
-            .then(data => setMoviesList(data.movies))
-    }, [])
-
-    useEffect(() => {
-        const filteredMoviesResult = moviesList.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase()))
+        const filteredMoviesResult = movies.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase()))
         setFilterMovies(filteredMoviesResult);
     }, [searchText])
 

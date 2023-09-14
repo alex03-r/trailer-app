@@ -2,7 +2,7 @@
 
 export const Footer = () => {
     return (
-        <footer className="bg-light" >
+        <footer className="bg-light  " >
             <div className="container-fluid footer  mt-5 pt-5 px-0 position-relative overlay-top">
                 <div className="row justify-content-center mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
                     <div className="col-lg-3 col-md-6 mb-5">

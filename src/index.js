@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { MovieRoute } from './Projects/movies/route/MovieRoute';
+import { MovieRoute } from './route/MovieRoute';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

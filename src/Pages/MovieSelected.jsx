@@ -14,10 +14,10 @@ export const MovieSelected = () => {
   return (
     <div className='mt-5' style={{ heigth: "90vh", width: "98vw" }} >
       <div className="container-lg ms-lg-4 ps-lg-3 mt-4 ps-xl-5 ms-xl-5 d-flex">
-        <div className=" container ps-sm-3 p-lg-4 ps-xl-0 mt-4 w-25  me-sm-4 me-lg-0">
-          <img src={movies[index]?.imgUrl} style={{ borderRadius: "4%" }} />
+        <div className=" container ps-sm-3 p-lg-4 ps-xl-0 mt-4  w-25  me-sm-0 me-lg-0">
+          <img src={movies[index]?.imgUrl} style={{ borderRadius: "4%", width:"100%", height:"100%" }} />
         </div>
-        <div className="container-lg ms-sm-5 ms-lg-0 ms-0  mt-5 ">
+        <div className="container-lg ms-sm-2 ms-lg-0 ms-0  mt-5 ">
           <p className="h1" >  Movie:  {movies[index]?.name || "default movie name"}</p>
           <p className='text-capitalize' > <strong>Category:</strong>  {movies[index]?.category || "default category name"}</p>
           <p className='text-capitalize'> <strong>Released:</strong>  {movies[index]?.released}</p>

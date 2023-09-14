@@ -16,7 +16,7 @@ export const SearchMovieList = ({ searchText, setSearchText }) => {
 
     return (
 
-        <ul className='list-group text-center' >
+        <ul className='  list-group text-center' >
             {
                 filteredMovies.map(movie => (
 

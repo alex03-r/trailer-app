@@ -1,8 +1,7 @@
 
-
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { useMovies } from '../useMovies';
+import { useMovies } from '../Hooks/useMovies'
 import { Footer } from '../components/Footer';
 
 
@@ -27,7 +26,9 @@ export const MovieSelected = () => {
       </div>
       <div className="container-lg ms-sm-0 ms-lg-4 ms-xl-5 mt-3 mb-5 ps-sm-4 pe-sm-5  ps-lg-5 ps-xl-5 me-xl-1 pb-xl-2"  >
 
-        <iframe width="100%" height="615" src={movies[index]?.movieSrcUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>
+        <iframe className="border rounded" width="100%" height="615" src={movies[index]?.movieSrcUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
+
+        </ iframe>
 
       </div>
       <Footer />

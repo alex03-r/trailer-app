@@ -1,6 +1,6 @@
 
 import { Movie } from "./Movie"
-import { useMovies } from "../useMovies"
+
 export const MovieList = ( { movies }) => {
 
    

@@ -65,18 +65,32 @@
 
 .img-carrusel{
 
-       color: white;
+     color: white;
  
     background-repeat:no-repeat;
     background-size: cover;  
     width: 100%;
-
-    background-position: center;
+    background-position: left center;
     object-fit: cover;   
 /* 
     object-fit: cover; */
  
 }
+
+.btnWacth{
+
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fafafa;
+    width: 120px;
+    border: 1px solid #fafafa ;
+    border-radius: 4px;
+
+}
+
+
 
 
 

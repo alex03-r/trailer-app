@@ -3,7 +3,7 @@
 
 
 import React from 'react'
-import { useMovies } from '../useMovies'
+import { useMovies } from '../Hooks/useMovies'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
@@ -27,7 +27,6 @@ export const Filter = ({ onFilter }) => {
     function getCategories() {
 
         let categories = []
-
         movies.forEach(movie => {
 
             if (!categories.includes(movie.category)) {

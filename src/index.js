@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import { MovieApp } from './Projects/movies/MovieApp';
+import { MovieRoute } from './Projects/movies/route/MovieRoute';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <MovieApp />  
+     <MovieRoute />  
   </React.StrictMode>
 );
 

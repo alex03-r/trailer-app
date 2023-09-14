@@ -1,11 +1,8 @@
 import { Footer } from "../components/Footer"
 import { MovieList } from "../components/MovieList"
 import { Filter } from "../components/Filter"
-import { useMovies } from "../useMovies"
+import { useMovies } from '../Hooks/useMovies'
 import { useState } from "react"
-
-
-
 
 export const Movies = () => {
 
@@ -15,12 +12,12 @@ export const Movies = () => {
 
    function filterMoviesByCategory(category){
 
-   let filteredMovies =  movies.filter(movie => movie.category.trim() === category.trim() )
-   if(category == "All") {
-    filteredMovies = [...movies];
-   }
+    let filteredMovies =  movies.filter(movie => movie.category.trim() === category.trim() )
+    if(category == "All") {
+        filteredMovies = [...movies];
+    }
 
-   setFilterMovies(filteredMovies)
+    setFilterMovies(filteredMovies)
 
    }
 

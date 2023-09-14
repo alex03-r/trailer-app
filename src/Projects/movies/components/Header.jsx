@@ -6,16 +6,15 @@ import { useState } from 'react';
 
 export const Header = () => {
 
-    const [searchText, setSearchText] = useState("") ;   
+    const [searchText, setSearchText] = useState("");   
 
   return (     
             <nav className="navbar fixed-top navbar-expand-lg ps-sm-2 ps-lg-5 navbar-light bg-light mb-0 pb-0" style={{ height:"60px" }}>
            
                 <div className="container-lg  ms-xl-4 ps-xl-3 w-100 " style={{ marginTop:"0px", paddingTop:"0px" }} >
                 <div className='d-flex flex-row-reverse' >
-                 <Link className='bg-light text-decoration-none  text-dark'   to="/">  <p className='fw-bold' >TrailerApp</p> </Link>
-                   <Link className='bg-light'  to="/" > <img  style={{width:"50px",marginTop:"-14px"  }} src={logoPeli} />
-                 </Link>
+                  <Link className='bg-light text-decoration-none  text-dark'   to="/">  <p className='fw-bold' >TrailerApp</p> </Link>
+                   <Link className='bg-light'  to="/" > <img  style={{width:"50px",marginTop:"-14px"  }} src={logoPeli} /> </Link>
                 </div>
                     <div className='d-flex me-sm-5 me-lg-4 mt-xl-1  ' >
                      <ul className='d-flex me-4 mt-2' >

@@ -1,5 +1,5 @@
 import { useState  } from "react"
-import Movies from "./Movies.json"
+import Movies from "../data/Movies.json"
 
 export function useMovies(){
 

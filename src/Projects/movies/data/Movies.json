@@ -1,0 +1,273 @@
+
+
+
+[
+
+    {
+        "id":1,
+        "name": "Bullet Train",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"Bullet Train is a 2022 American action comedy film directed by David Leitch and starring Brad Pitt as an assassin who must battle fellow killers while riding a bullet train",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1666923052/heroes/vzednuwamwvadf7idkw4.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/0IOsk2Vlc4o",
+        "released":"02/12/2020"
+    },  
+    {
+        "id":2,
+        "name": "Black Phanter",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"Black Panther is a 2018 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 18th film in the Marvel Cinematic Universe (MCU)",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1665448171/heroes/j9p5uzc5f4sxlmcdmsjb.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/xjDjIWPwcPU",
+        "released":"11/03/2019"
+        
+    },
+    {
+        "id":3,
+        "name": "Just go with it",
+        "category":"Comedy",
+        "isNew": false, 
+        "describtion":"Just Go with It is a 2011 American romantic comedy film directed by Dennis Dugan, written by Allan Loeb and Timothy Dowling, and produced by Adam Sandler, Jack Giarraputo, and Heather Parry.",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1665278716/heroes/ogyi6ulhzkqiiueijazn.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/fpj7i2CPt8M",
+        "released":"01/02/2023"
+        
+    },
+    {
+        "id":4,
+        "name": "Thor",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"Thor, American comic strip superhero created for Marvel Comics by writer Stan Lee and artist Jack Kirby. The character, derived from the Germanic god of the same name",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1665278896/heroes/dz5o1xxznmsccc9nylrs.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/Go8nTmfrQd8",
+        "released":"02/03/2021"
+        
+    },
+    {
+        "id":5,
+        "name": "Iron man",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"The Iron Man film series is a cycle of three films set in the Marvel Cinematic Universe: Iron Man, Iron Man 2 and Iron Man 3. While the films in this series this series are of wildly varying quality, there is no doubt that it is foundational to the success of Marvel Studios.",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1665279039/heroes/mpkldc1q7edhf0rb8snw.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/8ugaeA-nMTc?si=1WRMpeCy6hrZ2B9z",
+        "released":"02/03/2008"
+        
+    },
+    {
+        "id":6,
+        "name": "The lost city",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"The Lost City is a 2022 American action-adventure comedy film directed by the Nee brothers, who co-wrote the screenplay with Oren Uziel and Dana Fox, based on a story by Seth Gordon. Starring Sandra Bullock, Channing Tatum, Daniel Radcliffe, Da'Vine Joy Randolph and Brad Pitt, the film follows a romance novelist and her cover model, who must escape a billionaire who wants her to find a lost ancient burial chamber described in one of her books.",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1665278465/heroes/pvkmzmg5n47telv51itu.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/nfKO9rYDmE8?si=VzQBiMAZ3ocMhNxr",
+        "released":"02/03/2017"
+        
+    } , {
+        "id":7,
+        "name": "Arrow",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"Arrow is an American superhero television series developed by Greg Berlanti, Marc Guggenheim, and Andrew Kreisberg based on the DC Comics character Green Arrow, a costumed crime-fighter created by Mort Weisinger and George Papp, and is the first series of the Arrowverse, sharing continuity with other related television series. The series premiered in the United States on The CW on October 10, 2012, and ran for eight seasons until January 28, 2020. Arrow was primarily filmed in Vancouver, British Columbia, Canada.",
+        "imgUrl":"https://res.cloudinary.com/dlsc2062n/image/upload/v1662388200/heroes/fc5diw1f7vtx2978zyml.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/zelD6vcSgkw?si=NpoDJ0FxWwMGhLpR",
+        "released":"02/03/2018"
+        
+    },
+    {
+        "id":8,
+        "name": "Fast and Furios",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"is an American action film directed by Louis Leterrier and written by Justin Lin and Dan Mazeau. It is the sequel to F9 and is the tenth film in the Fast & Furious franchise. The film stars Vin Diesel, Jason Momoa, Michelle Rodriguez, Charlize Theron, Tyrese Gibson, Chris Ludacris Bridges Jordana Brewster John Cena Nathalie Emmanuel Sung Kang Scott Eastwood Daniela Melchior Brie Larson Jason Statham and Alan Ritchson" ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694632885/heroes/yl7jqxyszvdbuzxffyzl.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/DJWwk68t3Bs?si=RFN5CfjZrNvpFDQ7",
+        "released":"02/03/2022"
+        
+    },
+    {
+        "id":9,
+        "name": "Agente Stone",
+        "category":"action",
+        "isNew": true, 
+        "describtion":"Agente Stone (título original en inglés: Heart of Stone) es una película de suspenso y acción de espías estadounidense de 2023 dirigida por Tom Harper a partir de un guion de Greg Rucka y Allison Schroeder y una historia de Rucka. 1​ La película está protagonizada por Gal Gadot, Jamie Dornan, Alia Bhatt, Sophie Okonedo y Matthias Schweighöfer." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694647113/heroes/kywdkamzcnma86vnmr6d.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/ooI5LY6wgMk?si=KZSxRxVSFmH77OUe",
+        "released":"02/09/2023"
+        
+    },
+    {
+        "id":10,
+        "name": "Happy Ending",
+        "category":"Comedy",
+        "isNew": true, 
+        "describtion":"Un final feliz es una cinta de drama, escrita y dirigida por Michael Haneke (Amour), que cuenta con las actuaciones de Isabelle Huppert (La pianista), Jean-Louis Trintignant (Tres colores: Rojo) y Mathieu Kassovitz (Amelie)." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694647591/heroes/b3ljswtudknicqe8utg9.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/myICWVTMCu8?si=7P-JDbhTZXSYKv5I",
+        "released":"03/08/2023"
+        
+    },
+    {
+        "id":11,
+        "name": "Indiana Jones",
+        "category":"adventure",
+        "isNew": true, 
+        "describtion":"Indiana Jones is an American media franchise consisting of five films and a prequel television series, along with games, comics, and tie-in novels, that depicts the adventures of Dr. Henry Walton Indiana Jones, Jr. portrayed in all films by Harrison Ford, a fictional professor of archaeology." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694647779/heroes/v96nzuiqnakll8wg4ngr.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/EVjvIL2joxQ?si=J__DwqOrLEd1S18B",
+        "released":"02/09/2023"
+        
+    },
+    {
+        "id":12,
+        "name": "Barbey",
+        "category":"Comedy",
+        "isNew": true, 
+        "describtion": "Barbie es una película de comedia fantástica estadounidense de 2023, dirigida por Greta Gerwig y escrita por Gerwig y Noah Baumbach.4​ Basada en Barbie, la línea de muñecas de moda de Mattel, es la primera película de acción en vivo de Barbie, luego de numerosas películas animadas por computadora, lanzadas directas a video y por transmisión televisiva. El filme está protagonizado por Margot Robbie como Barbie, y Ryan Gosling como Ken, y sigue a los dos en un viaje de autodescubrimiento tras una crisis existencial." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694648120/heroes/q6d8cguexsloi6jurafn.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/gH2mRECr6y4?si=4VBDtPqKPzmGfnRe" ,
+        "released":"03/08/2023"
+        
+    },
+    {
+        "id":13,
+        "name": "Matrix",
+        "category":"action",
+        "isNew": false, 
+        "describtion":"The Matrix is an American cyberpunk media franchise consisting of four feature films, beginning with The Matrix and continuing with three sequels, The Matrix Reloaded, The Matrix Revolutions, and The Matrix Resurrections. The first three films were written and directed by the Wachowskis and produced by Joel Silvers" ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694703454/heroes/lp05dp1kxuzbbmtmeuf9.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/OM0tSTEQCQA?si=ndk4ponnzxbrTibG",
+        "released":"02/09/2011"
+        
+    },
+    {
+        "id":14,
+        "name": "Son como ninos",
+        "category":"Comedy",
+        "isNew": false, 
+        "describtion":"es una película cómica de 2010 dirigida por Dennis Dugan, escrita y producida por Adam Sandler y protagonizada por Sandler, Kevin James, Chris Rock, Rob Schneider y David Spade, quienes ya antes habían trabajado con Sandler, pero no todos juntos en una misma película. El guion fue escrito por Sandler y Fred Wolf." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694703731/heroes/b9gl5dugvk5u38wyzjfk.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/yMEDiKD7cyE?si=mXLfYl8_qzAjbjAJ",
+        "released":"02/09/2017"
+        
+    },
+    {
+        "id":15,
+        "name": "That is my boy",
+        "category":"Comedy",
+        "isNew": true, 
+        "describtion":"That's My Boy is a 2012 American satirical black comedy film directed by Sean Anders, written by David Caspe, and produced by Adam Sandler, Jack Giarraputo, Heather Parry, and Allen Covert. It stars Sandler and Andy Samberg in the lead roles, with Leighton Meester, Vanilla Ice, Tony Orlando, Will Forte, Milo Ventimiglia, Susan Sarandon, and James Caan in supporting roles." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694704839/heroes/nctv1jhjsfuakhzxuefk.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/zertZQpKBHk?si=DvE3MjH0ilj4p9Rn",
+        "released":"02/09/2023"
+        
+    },
+    {
+        "id":16,
+        "name": "Blended",
+        "category":"Comedy",
+        "isNew": false, 
+        "describtion":"Blended is a 2014 American romantic comedy film directed by Frank Coraci and distributed by Warner Bros. Pictures. Written by Ivan Menchell and Clare Sera, the film stars Adam Sandler and Drew Barrymore as two single parents who went on a blind date together and never wanted to see each other again afterwards. To their surprise, they both end up at the same African safari resort with their children and are forced to stay together." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694705037/heroes/rmlfjnceagj0iqboujxs.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/V6cKLTmDB-k?si=3IT6qK_vj99w5kU6",
+        "released":"02/09/2015"
+        
+    },
+    {
+        "id":17,
+        "name": "Mall Cop",
+        "category":"Comedy",
+        "isNew": false, 
+        "describtion":"Paul, a single dad who makes ends meet by working as a security guard at a mall, must save the day after thieves, dressed as Santa's employees, take over the shopping centre." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694705257/heroes/oldwum9fhejgy5cl22vv.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/dfzmYp60I7w?si=sqA5hpuGrxyyAhJP",
+        "released":"02/09/2012"
+        
+    },
+    {
+        "id":18,
+        "name": "Red Notice",
+        "category":"Comedy",
+        "isNew": false, 
+        "describtion":"Red Notice is a 2021 American action comedy film written and directed by Rawson Marshall Thurber starring Dwayne Johnson alongside Ryan Reynolds, Gal Gadot and Ritu Arya. It marks the third collaboration between Thurber and Johnson, following Central Intelligence (2016) and Skyscraper (2018). In the film, an FBI agent reluctantly teams up with a renowned art thief in order to catch an even more notorious thief." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694705537/heroes/vexiv8rv0umok43twwwg.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/Pj0wz7zu3Ms?si=hk-8ao1awaSkkJuf",
+        "released":"02/12/2019"
+        
+    },
+    {
+        "id":19,
+        "name": "Jungle Cruise",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Jungle Cruise is a 2021 American fantasy adventure film directed by Jaume Collet-Serra from a screenplay written by Glenn Ficarra, John Requa, and Michael Green. It is based on Walt Disney's eponymous theme park attraction." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694708070/heroes/jthywmryueyu48g7wf89.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/f_HvoipFcA8?si=p1wI7ZTIUcRBvplK",
+        "released":"12/08/2022"
+        
+    },
+    {
+        "id":20,
+        "name": "Uncharted",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Uncharted is a 2022 American action-adventure film directed by Ruben Fleischer from a screenplay by Rafe Lee Judkins, Art Marcum, and Matt Holloway, based on the video game franchise of the same name developed by Naughty Dog and published by Sony Interactive Entertainment." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694708353/heroes/coakmzls6tofoka5tkpw.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/v6uwWIK3p4g?si=dqEKOyjeQ6BGwDOF",
+        "released":"02/04/2021"
+        
+    },
+    {
+        "id":21,
+        "name": "Avatar 2",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Avatar: The Way of Water is a 2022 American epic science fiction film co-produced and directed by James Cameron, who co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno. Distributed by 20th Century Studios, it is the sequel to Avatar (2009) and the second installment in the Avatar film series. Cast members Sam Worthington, Zoe Saldaña, Stephen Lang, Joel David Moore, CCH Pounder, Giovanni Ribisi, Dileep Rao, and Matt Gerald reprise their roles from the original film," ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694708637/heroes/cxcpnp4vbrchrbazzlpw.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/FSyWAxUg3Go?si=yKN_4g-GCnvTyBAs",
+        "released":"05/09/2021"
+        
+    },
+    {
+        "id":22,
+        "name": "Interstellar",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Interstellar is a 2014 epic science fiction film co-written, directed, and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine. Set in a dystopian future where humanity is embroiled in a catastrophic blight and famine, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humankind." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694708856/heroes/tatxvu5xuabuz7wbpyh0.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/UoSSbmD9vqc?si=JW9D6j-DRAtX4U83",
+        "released":"10/09/2013"
+        
+    },
+    {
+        "id":23,
+        "name": "Aquaman",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Aquaman is a 2018 American superhero film based on the DC character of the same name. Co-produced and distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan from a screenplay by David Leslie Johnson-McGoldrick and Will Beall." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694709343/heroes/hukjmrsmrb8idka2mtwp.jpg",
+        "movieSrcUrl":"https://www.youtube.com/embed/LS7qSSjSmjw?si=f9CdQpLgu3jB8cLZ",
+        "released":"02/09/2020"
+        
+    },
+    {
+        "id":24,
+        "name": "Finding Nemo 2",
+        "category":"adventure",
+        "isNew": false, 
+        "describtion":"Finding Dory is a 2016 American computer-animated comedy-drama adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. Directed by Andrew Stanton, produced by Lindsey Collins and written by Stanton and Victoria Strouse, the film is the sequel[a] to Finding Nemo (2003)." ,
+        "imgUrl":"http://res.cloudinary.com/dlsc2062n/image/upload/v1694709732/heroes/lxzrzh46ajhikf5fyi6n.jpg",
+        "movieSrcUrl": "https://www.youtube.com/embed/NQu-153MnGQ?si=5UXxHfjbsvw9CJIh",
+        "released":"02/09/2022"
+        
+    }
+
+
+
+    
+    
+]

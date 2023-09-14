@@ -1,32 +1,32 @@
 import { Footer } from "../components/Footer"
 import { MovieList } from "../components/MovieList"
-import { Filter } from "../components/Filter"
+import { FilterMovies } from "../components/FilterMovies"
 import { useMovies } from '../Hooks/useMovies'
 import { useState } from "react"
 
 export const Movies = () => {
 
-   const { movies  } =  useMovies()
-   const[filterMovies, setFilterMovies] = useState(movies)
+    const { movies } = useMovies()
+    const [filterMovies, setFilterMovies] = useState(movies)
 
 
-   function filterMoviesByCategory(category){
+    function filterMoviesByCategory(category) {
 
-    let filteredMovies =  movies.filter(movie => movie.category.trim() === category.trim() )
-    if(category == "All") {
-        filteredMovies = [...movies];
+        let filteredMovies = movies.filter(movie => movie.category.trim() === category.trim())
+        if (category == "All") {
+            filteredMovies = [...movies];
+        }
+
+        setFilterMovies(filteredMovies)
+
     }
-
-    setFilterMovies(filteredMovies)
-
-   }
 
     return (
         <>
-         <div className="mt-5" >
-            <Filter onFilter={filterMoviesByCategory}  />
-         </div>
-            <div className="">
+            <div className="mt-5" >
+                <FilterMovies onFilter={filterMoviesByCategory} />
+            </div>
+            <div>
                 <MovieList movies={filterMovies} />
             </div>
             <Footer />

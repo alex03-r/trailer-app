@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 
 
-export const Filter = ({ onFilter }) => {
+export const FilterMovies = ({ onFilter }) => {
 
 
     const [categories, setCategories] = useState([])
@@ -40,8 +40,8 @@ export const Filter = ({ onFilter }) => {
 
     return (
         <div className=' d-flex justify-content-center me-0 ' >
-            {categories.map(category => (<button className={activeCategory === category ? 'btn btn-light mt-4 active text-capitalize' : 'btn btn-light mt-4 text-capitalize' } onClick={() => {
-                setActiveCategory(category)            
+            {categories.map(category => (<button className={activeCategory === category ? 'btn btn-light mt-4 active text-capitalize' : 'btn btn-light mt-4 text-capitalize'} onClick={() => {
+                setActiveCategory(category)
                 onFilter(category)
             }} key={category} >{category}</button>))}
         </div>

@@ -5,10 +5,9 @@ import { useMovies } from '../useMovies'
 export const SearchMovieList = ({ searchText, setSearchText }) => {
 
     const navigate = useNavigate();
-
-    const { movies } = useMovies()
-  
+    const { movies } = useMovies();  
     const [filterMovies, setFilterMovies] = useState([]); 
+    
 
     useEffect(() => {
         const filteredMoviesResult = movies.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase()))
@@ -24,11 +23,11 @@ export const SearchMovieList = ({ searchText, setSearchText }) => {
 
     return (
 
-        <ul className='list-group text-center' >
+        <ul className='  list-group text-center' >
             {
                 filterMovies.map(movie => (
 
-                    <li key={movie._id} onClick={() => navigateTotMovie(movie._id)} className='list-group-item' style={{ cursor: "pointer" }} >
+                    <li key={movie._id} onClick={() => navigateTotMovie(movie.id)} className='list-group-item' style={{ cursor: "pointer" }} >
                         {movie.name}
                     </li>
                 ))

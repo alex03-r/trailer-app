@@ -65,16 +65,16 @@
 
 .img-carrusel{
 
-    /* background-image: url('https://res.cloudinary.com/dlsc2062n/image/upload/v1662080525/heroes/c2fwjpecncmyztqjpyja.png'); */
-    color: white;
-    height: 200px;
-    width: 99vw;
+       color: white;
+ 
     background-repeat:no-repeat;
-    background-size: 100%;  
-    background-clip: content-box;
-    background-position: left center;
+    background-size: cover;  
+    width: 100%;
 
-    object-fit: cover;
+    background-position: center;
+    object-fit: cover;   
+/* 
+    object-fit: cover; */
  
 }
 

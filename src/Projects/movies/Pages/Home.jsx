@@ -1,26 +1,45 @@
-import React, { useEffect, useState } from 'react'
+
 import { Carrousel } from '../components/Carrousel'
-import { Movie } from '../components/Movie';
 import { useMovies } from '../useMovies';
+import { Footer } from '../components/Footer';
+import { Pagination } from '../components/Pagination';
+import { MovieList } from '../components/MovieList';
+import { useEffect, useState } from 'react';
 
 export const Home = () => {
 
   const { movies } = useMovies()
+  const [index, setIndex] = useState(0)
+  const [ paginatedMovies, setPaginatedMovies ] = useState( movies )
+  const amount = 4
+
+
+  function onNext(){
+    setIndex( i => i + amount )
+
+  }
+
+  function onBefore(){
+    setIndex( index => index - amount)
+
+  }
+
+  useEffect(() => {
+
+    setPaginatedMovies( movies.slice(index , index + amount ) )
+
+
+  }, [index])
 
   return (
-    <div style={{ marginRight: "0px" }} >
-      <div style={{ height: "200px" }} >
-        <Carrousel />
-      </div>
-      <div className='row justify-content-center me-0' style={{ backgroundColor: "#eeeeee", }}>
-        {
-          movies.map(movie => (
-
-            <Movie key={movie._id} {...movie} />
-
-          ))
-        }
-      </div>
+    <div style={{ marginRight: "0px" , marginBottom:"0px" }} className='h-75 ' >
+        <div style={{ height: "300px", width:"100%" }} >
+          <Carrousel />
+        </div>
+         <MovieList movies={paginatedMovies} />
+         <Pagination onNext={onNext} onBefore={onBefore} index={index} amount={amount}  />
+        <Footer />
+  
     </div>
   )
 }

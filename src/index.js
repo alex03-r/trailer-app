@@ -1,23 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { Login } from './Projects/Login/Login';
-//  import { ReviewsApp } from './Projects/reviews/ReviewsApp'
-// import { LoginRouter } from './Projects/Login/LoginRouter'
-import { NavBar} from "./Projects/movies/components/NavBar"
+
 import { MovieApp } from './Projects/movies/MovieApp';
-
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <ReviewsApp /> */}
-     {/* <Login /> */}
-     {/* <LoginRouter /> */}
-     <MovieApp />
- 
-  
+     <MovieApp />  
   </React.StrictMode>
 );
 

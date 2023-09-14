@@ -1,51 +1,36 @@
 
 
-import React, { useState, useEffect } from 'react'
-import { useParams  } from 'react-router-dom'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 import { useMovies } from '../useMovies';
-  
+import { Footer } from '../components/Footer';
+
 
 export const MovieSelected = () => {
 
-    const { id } = useParams();
-    const {movies} = useMovies();
-
-    let index = movies.findIndex(movie => movie._id === id);
-
-  function getCurrentWidth() {
-
-      if (window.screen.width >= 1367) {
-        return 1170;
-      } else if (window.screen.width > 1024 && window.screen.width <= 1366) {
-        return 1170;
-      } else if (window.screen.width > 640 && window.screen.width < 1025) {
-        return 900;
-      } else {
-        return 600;
-      }
-  }
+  const { id } = useParams();
+  const { movies } = useMovies();
+  let index = movies.findIndex(movie => movie.id === parseInt(id));
 
   return (
-    <div className=' mt-5' style={{ backgroundColor: "#eeeeee", heigth: "100vh" , width:"98vw"}} >
-
+    <div className='mt-5' style={{ heigth: "90vh", width: "98vw" }} >
       <div className="container-lg ms-lg-4 ps-lg-3 mt-4 ps-xl-5 ms-xl-5 d-flex">
-
         <div className=" container ps-sm-3 p-lg-4 ps-xl-0 mt-4 w-25  me-sm-4 me-lg-0">
           <img src={movies[index]?.imgUrl} style={{ borderRadius: "4%" }} />
         </div>
         <div className="container-lg ms-sm-5 ms-lg-0 ms-0  mt-5 ">
-
           <p className="h1" >  Movie:  {movies[index]?.name || "default movie name"}</p>
           <p className='text-capitalize' > <strong>Category:</strong>  {movies[index]?.category || "default category name"}</p>
-          <p className='text-capitalize'> <strong>Author:</strong>  {movies[index]?.author}</p>
-          <p className='fw-bold' >{movies[index]?.describtion}</p>
+          <p className='text-capitalize'> <strong>Released:</strong>  {movies[index]?.released}</p>
+          <p className='' ><strong>Description: </strong>{movies[index]?.describtion}</p>
         </div>
+      </div>
+      <div className="container-lg ms-sm-0 ms-lg-4 ms-xl-5 mt-3 mb-5 ps-sm-4 pe-sm-5  ps-lg-5 ps-xl-5 me-xl-1 pb-xl-2"  >
+
+        <iframe width="100%" height="615" src={movies[index]?.movieSrcUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>
 
       </div>
-
-      <div className="container-lg ms-sm-0 ms-lg-4 ms-xl-5 mt-5 ps-sm-4 pe-sm-5  ps-lg-5 ps-xl-5 me-xl-1   pb-xl-2"  >
-        <iframe width={getCurrentWidth() || 1160} height="615" src={movies[index]?.movieSrcUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>
-      </div>
+      <Footer />
     </div>
   )
 }

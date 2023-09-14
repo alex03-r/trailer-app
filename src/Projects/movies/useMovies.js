@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react"
+import { useState  } from "react"
+import Movies from "./Movies.json"
 
 export function useMovies(){
 
-    const[movies, setMovies] = useState([]);
+    const[movies, setMovies] = useState(Movies);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        fetch("http://localhost:4000/api/movies")
-         .then(data => data.json() )
-          .then(movies => setMovies(movies))
+    //     fetch("http://localhost:4000/api/movies")
+    //      .then(data => data.json() )
+    //       .then( resp => setMovies(resp.movies))
 
-    },[])
-
-    return { movies }
+    // },[])
+    return { movies , setMovies }
 
 }

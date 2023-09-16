@@ -11,22 +11,20 @@ export const Home = () => {
   const { movies } = useMovies()
   const [index, setIndex] = useState(0)
   const [paginatedMovies, setPaginatedMovies] = useState(movies)
-  const amount = 8
+  const amountPerPage = 8;
 
 
   function onNext() {
-    setIndex(i => i + amount)
-
+    setIndex(i => i + amountPerPage);
   }
 
   function onBefore() {
-    setIndex(index => index - amount)
-
+    setIndex(index => index - amountPerPage);
   }
 
   useEffect(() => {
 
-    setPaginatedMovies(movies.slice(index, index + amount))
+    setPaginatedMovies( movies.slice(index, index + amountPerPage) )
 
   }, [index])
 
@@ -36,7 +34,7 @@ export const Home = () => {
         <Carrousel />
       </div>
       <MovieList movies={paginatedMovies} />
-      <Pagination onNext={onNext} onBefore={onBefore} index={index} amount={amount} />
+      <Pagination onNext={onNext} onBefore={onBefore} index={index} amount={amountPerPage} />
       <Footer />
     </div>
   )

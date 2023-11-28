@@ -14,6 +14,7 @@ export const FilterMovies = ({ onFilter }) => {
     const [categories, setCategories] = useState([])
     const [activeCategory, setActiveCategory] = useState("All")
     const { movies } = useMovies()
+    const filter = "coking"
 
     useEffect(() => {
 

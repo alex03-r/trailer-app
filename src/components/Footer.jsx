@@ -1,6 +1,8 @@
 
 
 export const Footer = () => {
+
+    const fooo = "fooooooo"
     return (
         <footer className="bg-light  " >
             <div className="container-fluid footer  mt-5 pt-5 px-0 position-relative overlay-top">

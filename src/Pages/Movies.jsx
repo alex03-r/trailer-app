@@ -8,7 +8,7 @@ export const Movies = () => {
 
     const { movies } = useMovies()
     const [filterMovies, setFilterMovies] = useState(movies)
-
+    const i = 0;
 
     function filterMoviesByCategory(category) {
 

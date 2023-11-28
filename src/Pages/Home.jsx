@@ -12,6 +12,8 @@ export const Home = () => {
   const [index, setIndex] = useState(0)
   const [paginatedMovies, setPaginatedMovies] = useState(movies)
   const amountPerPage = 8;
+  const value = "understand"
+  const value2 = "understand"
 
 
   function onNext() {
@@ -24,7 +26,7 @@ export const Home = () => {
 
   useEffect(() => {
 
-    setPaginatedMovies( movies.slice(index, index + amountPerPage) )
+    setPaginatedMovies(movies.slice(index, index + amountPerPage))
 
   }, [index])
 
